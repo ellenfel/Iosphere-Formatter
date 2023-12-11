@@ -1,0 +1,1746 @@
+{
+  "title": "Nem Port Main Dashboard",
+  "image": null,
+  "mobileHide": false,
+  "mobileOrder": null,
+  "configuration": {
+    "description": "",
+    "widgets": {
+      "492082b6-8a9a-881a-022a-b4507f38cbe7": {
+        "isSystemType": true,
+        "bundleAlias": "maps_v2",
+        "typeAlias": "openstreetmap",
+        "type": "latest",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 8.5,
+        "sizeY": 6,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "3078311a-f530-cd9e-b33c-75b056b0724a",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "latitude",
+                  "type": "attribute",
+                  "label": "latitude",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.1638607888282817
+                },
+                {
+                  "name": "longitude",
+                  "type": "attribute",
+                  "label": "longitude",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.1904233248863605
+                },
+                {
+                  "name": "name",
+                  "type": "entityField",
+                  "label": "Name",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.15667095097666328
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1689490629430,
+                "endTimeMs": 1689577029430
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "provider": "openstreet-map",
+            "gmApiKey": "AIzaSyDoEx2kaGz3PxwbI9T7ccTSg5xjdw8Nw8Q",
+            "gmDefaultMapType": "roadmap",
+            "mapProvider": "OpenStreetMap.Mapnik",
+            "useCustomProvider": false,
+            "customProviderTileUrl": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            "mapProviderHere": "HERE.normalDay",
+            "credentials": {
+              "useV3": true,
+              "app_id": "AhM6TzD9ThyK78CT3ptx",
+              "app_code": "p6NPiITB3Vv0GMUFnkLOOg",
+              "apiKey": "kVXykxAfZ6LS4EbCTO02soFVfjA7HoBzNVVH9u7nzoE"
+            },
+            "mapImageUrl": "data:image/svg+xml;base64,PHN2ZyBpZD0ic3ZnMiIgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwIiB3aWR0aD0iMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogPGcgaWQ9ImxheWVyMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtOTUyLjM2KSI+CiAgPHJlY3QgaWQ9InJlY3Q0Njg0IiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBoZWlnaHQ9Ijk5LjAxIiB3aWR0aD0iOTkuMDEiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiB5PSI5NTIuODYiIHg9Ii40OTUwNSIgc3Ryb2tlLXdpZHRoPSIuOTkwMTAiIGZpbGw9IiNlZWUiLz4KICA8dGV4dCBpZD0idGV4dDQ2ODYiIHN0eWxlPSJ3b3JkLXNwYWNpbmc6MHB4O2xldHRlci1zcGFjaW5nOjBweDt0ZXh0LWFuY2hvcjptaWRkbGU7dGV4dC1hbGlnbjpjZW50ZXIiIGZvbnQtd2VpZ2h0PSJib2xkIiB4bWw6c3BhY2U9InByZXNlcnZlIiBmb250LXNpemU9IjEwcHgiIGxpbmUtaGVpZ2h0PSIxMjUlIiB5PSI5NzAuNzI4MDkiIHg9IjQ5LjM5NjQ3NyIgZm9udC1mYW1pbHk9IlJvYm90byIgZmlsbD0iIzY2NjY2NiI+PHRzcGFuIGlkPSJ0c3BhbjQ2OTAiIHg9IjUwLjY0NjQ3NyIgeT0iOTcwLjcyODA5Ij5JbWFnZSBiYWNrZ3JvdW5kIDwvdHNwYW4+PHRzcGFuIGlkPSJ0c3BhbjQ2OTIiIHg9IjQ5LjM5NjQ3NyIgeT0iOTgzLjIyODA5Ij5pcyBub3QgY29uZmlndXJlZDwvdHNwYW4+PC90ZXh0PgogIDxyZWN0IGlkPSJyZWN0NDY5NCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgaGVpZ2h0PSIxOS4zNiIgd2lkdGg9IjY5LjM2IiBzdHJva2U9IiMwMDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgeT0iOTkyLjY4IiB4PSIxNS4zMiIgc3Ryb2tlLXdpZHRoPSIuNjM5ODYiIGZpbGw9Im5vbmUiLz4KIDwvZz4KPC9zdmc+Cg==",
+            "tmApiKey": "84d6d83e0e51e481e50454ccbe8986b",
+            "tmDefaultMapType": "roadmap",
+            "latKeyName": "latitude",
+            "lngKeyName": "longitude",
+            "xPosKeyName": "xPos",
+            "yPosKeyName": "yPos",
+            "defaultCenterPosition": "0,0",
+            "disableScrollZooming": false,
+            "disableDoubleClickZooming": false,
+            "disableZoomControl": false,
+            "fitMapBounds": true,
+            "useDefaultCenterPosition": false,
+            "mapPageSize": 16384,
+            "markerOffsetX": 0.5,
+            "markerOffsetY": 1,
+            "posFunction": "return {x: origXPos, y: origYPos};",
+            "draggableMarker": true,
+            "showLabel": true,
+            "useLabelFunction": true,
+            "label": "${entityName}",
+            "labelFunction": "var color;\nif(dsData[dsIndex].active !== \"true\"){\n    color = 'rgb(255, 111, 0)';\n} else {\n    color = 'rgb(39, 134, 34)';\n}\nreturn '<span style=\"border: solid ' + color + '; border-radius: 10px; color: ' + color + '; background-color: #fff; padding: 3px 5px; font-size: 14px\">' + \n           '${entityName}' + \n        '</span>'",
+            "showTooltip": true,
+            "showTooltipAction": "hover",
+            "autocloseTooltip": true,
+            "useTooltipFunction": false,
+            "tooltipPattern": "<b>${entityName}</b><br/><br/><b>Latitude:</b> ${latitude:7}<br/><b>Longitude:</b> ${longitude:7}<br/><b>Temperature:</b> ${temperature} °C<br/><small>See advanced settings for details</small>",
+            "tooltipOffsetX": 0,
+            "tooltipOffsetY": -1,
+            "color": "#fe7569",
+            "useColorFunction": true,
+            "useMarkerImageFunction": true,
+            "markerImageSize": 34,
+            "markerImageFunction": "var res;\nif(dsData[dsIndex].active !== \"true\"){\n\tvar res = {\n\t    url: images[4],\n\t    size: 48\n\t}\n} else {\n    var res = {\n\t    url: images[4],\n\t    size: 48\n\t}\n}\nreturn res;",
+            "markerImages": [
+              "data:image/png;base64,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",
+              "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAB/CAYAAAD4mHJdAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACWAAAAlgB7MGOJQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAA3vSURBVGiB7Vt7cFzVef+dc+/d90OrJyO/JSO/4ncxxfULMCYIAyEW08amJJgmM4GmnZjJdNq4gcSGzLQxk3bsaWcaaIHyR8CJrWAbpjgG/AhINsbYxkaSDY6xJFvSrrS7Wu3uvfecr3+cu1pbXhkJs/4nujNndufec77f+d7fd+4uw8gvIxwOfocBaz0e91yXyx0BgKyZiWUz5kcEvBKPJ18EYI+C5rWvkpKSyZGS8LGHGtbQR8ePUUdnB50/f57OfnqWWlpbaN++39O99fdQpCR0NBKJTBwJTfZFE4LBYLmh8+YXXvifKctWrEBPTze9+cbu8/3JVMoWNjwer3/ZsuUTvV4P239gP36yceNZW9CtyWQyei262hcB+7zurU/99Ge3r1nTgJdfevFsqr8/Wlc3rWbGzFkV8+fPr1iwYEEJgLadO3cmbr/jjohh6KXHPjxamsmar39pjoPBYHl5aUnnqZY2/b1Dh9LdPd39kUgk6PP5PD6fH36/Dz6fDx6PF+fOfdZ9+pPTgbq6Ou+aBx+0k/0DVYlEIjYcbX4tYM5pxeK/WKIDwM7Gxt0TJox/dtLESXC53JuHzvV4PBVHDjfvAYDZs+fonMsV16R9rYeM8XG1tbUAgMrKsrDP659DRJ5gMNhbaH5NTU0IAMaPHw9IPv5LAxORy+31AgBcLsO41lwAcLu9BgAYLheIkftLAxfzGgMeAx4DHgMeAx4DHgMeAx4DHgMeAx4DHgMeAx4D/lME1ke7gDF8ltbOHe3W923oEwYi1jxftWfZWgAziwacZkd2pfyN96XN5IIu7dMtIKA9/TI+zqCnFps2Alg5UlojFnVqIHZUlO2sl4RyC4CU+SEEylux8Z/iyc7mrxw4U7UnYwvGpXMYKIgNGdwXC/76C48oRw3sDWfnCgIkARJXcpwbvpA1e6T0Rq5jDr8EAHKA6OpjUOJwfeXAJAEhAXAGgEPKq+dIMVJqowDO4RAAC0rHV21u5LijAJaABAOIAY5Oh15iFMgj1zEpcUuuXjpIWeCouxjAtnIZcGKA5AVFbRfazPUC50QrKe8+Qy8qiqjBYIODA5DgBd1pBO9WRg9sy7yOhXBca+icYrgTOUGOiKnIVdCdisAxJGBTPsYW0nHRrJqgfNmGVtiqaeR1xchF7Vgz40q/BUNmISlcL7CUgJAMnOUiVwEdF0PURIAAVHaC8ucbAiwcQAb1KQpwXMjFrhtYMcOVO8lhOB457ujcKZd9hBguSYwcelTupKyaQWKYJFEU4xJw/Dhfcw29ilSBcNjEoTucFnSnkeOOvvTJpcVC1cYoGB5NAGEQTukjMAzHoghJghyWCRjenYoTuZjKx8xJiwU4LrSZ6waWpIoBjTuRqxDHRUkSUMWAJAZp6QU5FqOw65HHapG3bGVcBTZXDI5VnFaFgBL1yC34uoBJqEJeIwD2MMY1ilZidAFEMlDOqm9UdpJ0ZawumI+LU9ArwhyqWxyNz14XsBAMUnLVH0ttGB0XococdCGWE3XhOV85MF1WV2OY3omK0S2SkxgYAZYYJoAUpcqEEjG/Ru80isA1ysMXYNCnCum4aKUPgTu90w3sFinXL6nO/MadCAhiKloxBjFMeSuK0S1Kylv1cE1bUVoYyHwhoI6bCswpjjuxK5u2G2lcti2jzNCRTluioHEVw52EBA5/2LKsLBL+h2gs/o+Fjpa+MqtmjCbkqQJSYFF3T3zRsPMvA75i7UiBA4FApa6z5+fNnbd6/frHADghk7QdlhAHdMY0KXkZAHAuozaRMDRtKYMdAYDVq1fjcHPTD860nZlsS3qsv7+/+6pNDr0RDAanGTrf85Onnq75/uNPIJ1O4+dbnj34Ot6B4eFLqksqUeEvgcflAREhZabR09+Li/EorLQ4eFv317D2oW8t0XUdu3a9jud/9auztqD6ZDLZOixwOByeouv8D1u3brtpxYrb0XS4Kfbj3//8VHC8d0nDLXfj67OWIeQJgDGADfoOAxHQl05i14l92PHBXiTPp/c/OrFh9vwF8yMnjp/A5s2bOqXEbX19fX+8CriqqspvmunDTz/10xkr71qFnY07Tr1i7aqsLg2Vb6h/GOPCpdAYgTPlNLmF5AzpvBRp74viX3a/hO6+ge47+hZG61fVTz9y+DCee27Lx15fYFFHR8cAcNkPuw2DPXfP1+vvvf+BB7Br967WX9Mbk70eCn33zlWoCrsgKAFBCdgy/2nLBCyZgCUSMGUSpkzC0G1MrKzE0XMt/la9I0QnM+cWL15cmkwmK1tOnwpksuabg8YVifjnhEOlj69dtw6nT51Kv2q96fYG4fG7gbJwFhn7cxicIJgEZwAfEiokGASpWG1KhvIwg1/91ti1N9DEJ7ZOzKxdt87T1Nz8A67jv2Kx/o85AJDk//zXjzzCAeA/D7zU6PZjkkuXcBuEjN2OrGiHabfDFB2w7HZYoh3mVaMDWWdu1m6Hy5Bw6RIuP6b87+HXdgDAww8/zIXgGwFADwQCFYFA4BuLFi3CoUN/6LRmyL/y6gSXTtC4QDTVgQo/B5iEJFJ6Rt64lI6Vfi3JYBFHd1JA5wIunUNIQvpr/C+bm5u65s9fWBnwe9dISWVc0/DNhQsX6gDwTuuhd3WNYOSGTjjSehGp7EVYsguWuJQfssu51wVTXIIpLsGWlzBgXsSRM5dg6Hk6uk787Zb39gHA7NlzDM7xoM4Yli5fvgJSSiRmmbP9HNA0Qm4D6axEc6uJ6eOzuCloQuOOjlneqiUx2BK4lDBwut2DTFaHoXFYGilaHEjMMOdKKXHb4tvw/nvvL9UZ+Lyb6+pw/PjxpOZhsziX0DigcYLG1QaEBD69ZKA7wRHx2/C7BDSNwEi9AEmZGmJJA/1Z9SJM12hwvcYBzgmaj89obW3pr62dGmCcz+cuQ68GgEtdl7oYU40CZwSeW+As1rmy5KzNkbY1WILDlOp71ubgnKA7czVO4NyhwQhcFS7o6urq5pzDMLRqnXEtCACpdCrFHOHlAsTgYEq0nCnj0jnBY6i8KCTLBxbmzB2yPkczmU4lAYAxHtKFECYAPeDzBQZD4GU+motMueXklECWc7QkSaVDGoTAVetz8AGfLwQAQoisbtt2N4BJZaVlpZQjkntdS8w5UFOFni0YLMGhWfny1rbVPVuoOVKyK9ZeTrMsUl7qAHdzkPyktzeG2tqbw8KihCQlPjVUl2hLBkswmDZD1mJIWxwDWTXSFkfWUs8sZ64QzlqHjiRA2tQ7ZcqUYCwWgyT6hBNjb+3ZvQehUIi52tje3M6FyHHIYNkOqM2RsTjS2cuAs+pe1uYKPLcBkduA+m60sH1+v5/t3fsWGGP/x6VkjR98cAQAMNc7bXJepAyWzWHaimjW4siYDGmTY8DkGMhqapgcaVM9yw5ugMOyeX4DkmGub1otABz/6DiI2O94IpE4E+3p+aCzsxP333PfAvOi2G8JBtMRbU68GZMj44Ao0BzXmgOsRk7spq1oWILB6rQP3nt3/byLnZ2IxWKH4/H4pxoAeFzuC21tretW3rUKnk5mtWiflzAGxhgDQ66IYyrnOnqzBFfDZjAdLk1HMnkpMWRNLldmFomamtrIL/71F+iPJ/8mnc2e4QDQm0jsOXfu3L6TJ0/ivtX3T607M26P6SzMWI5eB7ktPHLPc/MV5xwTjpe9sfLOu2pOHD+JCxc+fyeWSLyZdzCoWsvjNpqef/6F8KTJU/DDLT/a3jM90eDWCS5dqmDvxF7NCRSAOikQhCuMUXHMEDjm3v7jb/+oIRrtxpMbnuzNmvatiUSi7QpgAAiFQneXlZbs3rGjUauorMSmLc+8dShy7HbDELqeA3bC4GCScHxWSMDOgVuaPb2t+t3vPfK9O1P9A/j7v3vC7ov318fj8bdyWFf8YCSbzZ7VNHb+tVdfrV911ypt/bcfq52J2uTBg+//LhWwZ0nJYTtWf6WrcccDGFgLdn5nwkPVD9Q/MLOzsxNPbvhhNpUc+G5vPL7jcqxBjonozwEsBzD5lVde9jy5YcPqTZufKX90/WOwbRv7330nsffDt08dSB41EkZyHPfwmwBAZuTFsBm48GeuWfai2oUzp02fFjKzJhp3NuLFF/+765e//Pfd31q71gLwGYC3GWNNAMCIaBKAJwBUO3uQnZ2d/MyZNv1vn/j+LUuXLq/Z/MyzCIfDTmxW8Y+IVFyWqjKRQkDYNqKxGDb97GkcOXLk7LZt/9F8c12dqKqqYM4LYALQCWAbI6J/A1AGgKK9vSBhoa8vEe+N9TwejcZYU1MTfrN9O6puqkJDw0NYtnwFpk6dCsZUMrFtG22trTiw/11s3/4aotEo1jQ04NZFt6KsrJTCoZKtJaWRiGG4KBKJ5BJWnw4gDedAx+0yMJCywLnQGWOSMabV1NbikUfX40J7B367sxFbt25DMhGHZZkgAC7DhWAojOpx4zF3wS0YP64aVZUVYCoQSN2la4bhIsNlcOS73H5GRBUAHgcwBYABAD09PZROp1gq2V8WTybq4vH4xEQ8oSWSSfSnUkinM7As9RdUw9Dh9XoR8PsQCgYRCodESTj0x1Aw2OrxBXsDgYBdXl6eM2IB4CyAbZcb12wASwBMB1Dq7C4ACJZIJHstM5PWdC2TTmcom80wEtySAFwupum6wbxeDxeCuT0et8/v94UBTTrSJABRAKcAHGCMnbrKjy/bRBjAHAATAFQ5NuAF4IFqAtyOKzKo83MLgAkgA2AAQB+ADgCfAzjBGIsPxfh/6wbDK7xbMFYAAAAASUVORK5CYII=",
+              "data:image/png;base64,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",
+              "data:image/png;base64,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",
+              "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0ic3ZnNDQwOCIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCAxNTAgMTUwIgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNTAgMTUwOyIKICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgc29kaXBvZGk6ZG9jbmFtZT0iZW5lcmd5LW1ldGVyLnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMC45Mi40IChmNDcyMDU0LCAyMDE5LTAyLTE3KSI+PG1ldGFkYXRhCiAgIGlkPSJtZXRhZGF0YTEwMCI+PHJkZjpSREY+PGNjOldvcmsKICAgICAgIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZQogICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPjxkYzp0aXRsZT48L2RjOnRpdGxlPjwvY2M6V29yaz48L3JkZjpSREY+PC9tZXRhZGF0YT48ZGVmcwogICBpZD0iZGVmczk4Ij4KCQoJCgoJCgkKPC9kZWZzPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgIGd1aWRldG9sZXJhbmNlPSIxMCIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIKICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iOTg0IgogICBpZD0ibmFtZWR2aWV3OTYiCiAgIHNob3dncmlkPSJmYWxzZSIKICAgaW5rc2NhcGU6em9vbT0iMC45NDA0NTIwMiIKICAgaW5rc2NhcGU6Y3g9Ii0yNjcuMDM4MjIiCiAgIGlua3NjYXBlOmN5PSIyODIuOTgwNTEiCiAgIGlua3NjYXBlOndpbmRvdy14PSIxOTIwIgogICBpbmtzY2FwZTp3aW5kb3cteT0iMjciCiAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzQ0MDgiIC8+CjxzdHlsZQogICB0eXBlPSJ0ZXh0L2NzcyIKICAgaWQ9InN0eWxlNzUiPgoJLnN0MHtvcGFjaXR5OjAuODkyO2VuYWJsZS1iYWNrZ3JvdW5kOm5ldyAgICA7fQoJLnN0MXtmaWxsOnVybCgjU1ZHSURfMV8pO30KCS5zdDJ7ZmlsbDojRjQ0MzM2O30KCS5zdDN7ZmlsbDojRkZGRkZGO30KPC9zdHlsZT4KCgoKPGcKICAgaWQ9ImcxMzExIj48ZwogICAgIHN0eWxlPSJvcGFjaXR5OjAuODkyMDAwMDM7ZW5hYmxlLWJhY2tncm91bmQ6bmV3IgogICAgIGlkPSJwYXRoNjg4MS0zLTUtNS0xLTgtNC00LTctOCIKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTQ2LjQzOCwtMjc2LjAyOCkiCiAgICAgY2xhc3M9InN0MCI+CgkJCgkJCTxyYWRpYWxHcmFkaWVudAogICBpZD0iU1ZHSURfMV8iCiAgIGN4PSIzMDg1LjIxNDgiCiAgIGN5PSIzMTc4LjQ1OCIKICAgcj0iNDkuOTAxMTk5IgogICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDAuNjc5MywwLjAwNzYsLTAuNTA5LDAuNTYxMiwtMjMyLjYyODYsLTE0MTEuNzI0NikiCiAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KCQkJPHN0b3AKICAgb2Zmc2V0PSIwIgogICBzdHlsZT0ic3RvcC1jb2xvcjojMDAwMDAwIgogICBpZD0ic3RvcDc3IiAvPgoJCQk8c3RvcAogICBvZmZzZXQ9IjEiCiAgIHN0eWxlPSJzdG9wLWNvbG9yOiMwMDAwMDA7c3RvcC1vcGFjaXR5OjAuMTg4IgogICBpZD0ic3RvcDc5IiAvPgoJCTwvcmFkaWFsR3JhZGllbnQ+CgkJPHBhdGgKICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgc3R5bGU9ImZpbGw6dXJsKCNTVkdJRF8xXykiCiAgIGNsYXNzPSJzdDEiCiAgIGQ9Im0gMjg1LjYsMzg4LjUgYyAxMC4zLC0xMi40IDQuNCwtMjIuNCAtMTQuNCwtMjIuNCAtMTguOSwwIC00Mi40LDEwIC01My45LDIyLjQgLTE2LjgsMTggMC40LDIzLjUgLTAuMiwzNSAtMC4xLDEuOCAzLjksMS44IDcsMCAxOS44LC0xMS41IDQ2LjUsLTE3IDYxLjUsLTM1IgogICBpZD0icGF0aDgyIiAvPgoJPC9nPjxwYXRoCiAgICAgc3R5bGU9ImZpbGw6I2Y2OGIzODtmaWxsLW9wYWNpdHk6MSIKICAgICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICAgIGlkPSJwYXRoNjg4MS0zLTUtNS0xLTgtNC00IgogICAgIGNsYXNzPSJzdDIiCiAgICAgZD0iTSAxMjQuNyw2OS4xIEMgMTIzLjgsNDEuNiAxMDIuNCwxOS4zIDc0LjksMTkuMyBjIC0yNy41LDAgLTQ5LDIyLjMgLTQ5LjgsNDkuOCAtMS4zLDQwLjEgMzAuNyw1Mi4yIDQ0LjcsNzggMi4yLDQgOCw0IDEwLjEsMCAxNC4xLC0yNS44IDQ2LjEsLTM3LjkgNDQuOCwtNzgiIC8+PGcKICAgICBpZD0iZzQ5MTUiPgoJCTxwYXRoCiAgIGlkPSJwYXRoNjg4My0yLTMtNS0yLTQtOS00LTkiCiAgIGNsYXNzPSJzdDMiCiAgIGQ9Ik0gNzQuOCwxMDYuNCBDIDU0LjIsMTA2LjQgMzcuNCw4OS43IDM3LjQsNjkgYyAwLC0yMC42IDE2LjcsLTM3LjQgMzcuNCwtMzcuNCAyMC42LDAgMzcuNCwxNi43IDM3LjQsMzcuNCAwLDIwLjcgLTE2LjcsMzcuNCAtMzcuNCwzNy40IgogICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIgogICBzdHlsZT0iZmlsbDojZmZmZmZmIiAvPgoJPC9nPjxnCiAgICAgc3R5bGU9ImZpbGw6I2Y2OGIzODtmaWxsLW9wYWNpdHk6MSIKICAgICBpZD0iZzU1NzgtMi04IgogICAgIHRyYW5zZm9ybT0ibWF0cml4KDAuMTI0ODI1MzMsMC4wNDIwMzkwNCwtMC4wNDIwMzkwNCwwLjEyNDgyNTMzLDUzLjE0MjY1LDMxLjM5NzY4OSkiPjxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDojZjY4YjM4O2ZpbGwtb3BhY2l0eToxIgogICAgICAgaWQ9InBhdGg1NTgwLTAtOSIKICAgICAgIGQ9Im0gMzYyLjI5NiwxMjUuMDU1IGMgLTIuODUxLC0yLjg1MyAtNi4wOTIsLTQuMjggLTkuNzA2LC00LjI4NyAtMC43NywwIC0xLjkwMiwwLjE5MyAtMy40MzIsMC41NzIgTCAyMzYuMSwxNDkuMzE5IDI4NC45MTcsMTcuMTMgYyAwLjk1MSwtMS45MDMgMS40MzEsLTMuNjE0IDEuNDMxLC01LjEzOSAwLC0zLjIzNCAtMS4yNDIsLTYuMDQgLTMuNzEzLC04LjQyIEMgMjgwLjE2MSwxLjE4OCAyNzcuMTE1LDAgMjczLjUwMSwwIGggLTkzLjY0NSBjIC0zLjA0NSwwIC01LjcwOCwwLjg1NSAtNy45OTQsMi41NjggLTIuMjg0LDEuNzE1IC0zLjgwOSwzLjkwNSAtNC41NjgsNi41NjcgbCAtNTcuMzg2LDIzNS41NDYgYyAtMC45NTMsNC41NjQgMC4yODQsOC4yNzcgMy43MTEsMTEuMTM1IDIuNDczLDIuMDk5IDUuNDIxLDMuMTM5IDguODQ4LDMuMTM5IDEuNTI0LDAgMi42NjYsLTAuMDg5IDMuNDI3LC0wLjI4MSBsIDExNS45MTQsLTI4LjgzOCAtNTYuMjQ0LDIzMC42OTEgYyAtMC43NiwzLjA0NSAtMC4zMzMsNS44OTkgMS4yODcsOC41NjIgMS42MTksMi42NjkgNC4wNDcsNC40NzYgNy4yODEsNS40MjcgMS45MDMsMC4zNzcgMy4yMzksMC41NjggMy45OTksMC41NjggNS41MiwwIDkuNTE0LC0yLjM3NSAxMS45OTEsLTcuMTM2IEwgMzY0LjI5NCwxMzcuNjE2IGMgMi4wOTUsLTQuNTY3IDEuNDM0LC04Ljc1NiAtMS45OTgsLTEyLjU2MSB6IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIgLz48L2c+PC9nPjwvc3ZnPg=="
+            ],
+            "showPolygon": false,
+            "polygonKeyName": "perimeter",
+            "editablePolygon": false,
+            "showPolygonLabel": false,
+            "usePolygonLabelFunction": false,
+            "polygonLabel": "${entityName}",
+            "showPolygonTooltip": false,
+            "showPolygonTooltipAction": "click",
+            "autoClosePolygonTooltip": true,
+            "usePolygonTooltipFunction": false,
+            "polygonTooltipPattern": "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+            "polygonColor": "#3388ff",
+            "polygonOpacity": 0.2,
+            "usePolygonColorFunction": false,
+            "polygonStrokeColor": "#3388ff",
+            "polygonStrokeOpacity": 1,
+            "polygonStrokeWeight": 3,
+            "usePolygonStrokeColorFunction": false,
+            "showCircle": false,
+            "circleKeyName": "perimeter",
+            "editableCircle": false,
+            "showCircleLabel": false,
+            "useCircleLabelFunction": false,
+            "circleLabel": "${entityName}",
+            "showCircleTooltip": false,
+            "showCircleTooltipAction": "click",
+            "autoCloseCircleTooltip": true,
+            "useCircleTooltipFunction": false,
+            "circleTooltipPattern": "<b>${entityName}</b><br/><br/><b>TimeStamp:</b> ${ts:7}",
+            "circleFillColor": "#3388ff",
+            "circleFillColorOpacity": 0.2,
+            "useCircleFillColorFunction": false,
+            "circleStrokeColor": "#3388ff",
+            "circleStrokeOpacity": 1,
+            "circleStrokeWeight": 3,
+            "useCircleStrokeColorFunction": false,
+            "snappable": false,
+            "initDragMode": false,
+            "hideAllControlButton": false,
+            "hideDrawControlButton": false,
+            "hideEditControlButton": false,
+            "hideRemoveControlButton": false,
+            "useClusterMarkers": true,
+            "zoomOnClick": true,
+            "maxClusterRadius": 80,
+            "animate": true,
+            "spiderfyOnMaxZoom": false,
+            "showCoverageOnHover": true,
+            "chunkedLoading": false,
+            "removeOutsideVisibleBounds": true,
+            "useIconCreateFunction": false
+          },
+          "title": "New OpenStreetMap",
+          "dropShadow": false,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "widgetStyle": {},
+          "actions": {
+            "markerClick": [
+              {
+                "name": "navigate_to_details",
+                "icon": "more_horiz",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "chart",
+                "setEntityId": true,
+                "stateEntityParamName": null,
+                "openRightLayout": false,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "74eae7a4-1707-01dd-04a4-97f2302a4d36"
+              }
+            ],
+            "tooltipAction": []
+          },
+          "showTitleIcon": false,
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "492082b6-8a9a-881a-022a-b4507f38cbe7"
+      },
+      "aed80ec8-81d4-c6f7-e71f-5ab04f5ded06": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_value_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 11,
+        "sizeY": 12,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "786e9c18-a36b-d48e-dadd-ba2caff9219b",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "energy",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.3502056744000932
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1689494106351,
+                "endTimeMs": 1689580506351
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "cardCss": ".card,\n.card * {\n    box-sizing: border-box;\n}    \n.card {\n    position: relative;\n    width: 100%;\n    height: 100%;\n}\n.card .content {\n    height: 100%;\n}\n.card .upper-bar {\n    position: relative;\n    z-index: 0;\n    overflow: hidden;\n    height: 70%;\n    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26);\n    color: #fff;\n}\n.card .lower-bar {\n    height: 30%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.card .right-top-bar {\n    display: none;\n    position: absolute;\n    top: 10px;\n    right: 10px;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n\n.card .right-top-bar .icon-container {\n    display: none;\n    box-shadow: 0px 0px 4px 2px rgba(0,0,0,.26);\n    cursor: pointer;\n    border: 3px solid #fff;\n    color: #fff;\n    background-color: rgb(255, 157, 12);\n}\n\n.card .right-top-bar .icon-container .icon {\n    color: #fff;\n}\n\n.card .right-top-bar .icon-container:hover {\n    border: 3px solid rgb(255, 157, 12);\n    color: rgb(255, 157, 12);\n    background-color: #fff;\n}\n\n.card .right-top-bar .icon-container:hover .icon {\n    color: rgb(255, 157, 12);\n}\n\n.card .image-shade {\n    width: 100%;\n    height: 100%;\n    padding-left: 16px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    background-color: rgba(255, 157, 12, .5);\n    z-index: 0;\n}\n.card h1 {\n    margin: 0;\n    font-size: 20px;\n    font-weight: bold;\n    line-height: 30px;\n}\n.card .icon-container {\n    height: 40px;\n    width: 40px;\n    border-radius: 50%;\n    border: 3px solid rgb(255, 157, 12);\n    text-align: center;\n}\n.card .description {\n    margin-left: 16px;\n    font-size: 20px;\n    font-weight: 500;\n    color: rgb(255, 157, 12);\n}\n.card .value {\n    font-size: 40px;\n    font-weight: 300;\n    letter-spacing: -2px;\n}\n.card .icon {\n    line-height: 36px;\n    color: rgb(255, 157, 12);\n}\n.card video {\n    position: absolute;\n    top: 75%;\n    left: 0;\n    width: 160%;\n    z-index: -1;\n    transform: translateY(-70%);\n}",
+            "cardHtml": "<div class='card' id=\"energyConsumptionHtmlCard\">\n    <div class='content'>\n       <div class='upper-bar'>\n           <video loop muted autoplay>\n               <source src=\"https://thingsboard.io/images/dashboards/districts/energy-consumed-bg.mp4\" type=\"video/mp4\">\n               <source src=\"https://thingsboard.io/images/dashboards/districts/energy-consumed-bg.webm\" type=\"video/webm\">\n           </video>\n            <div class='image-shade'>\n                <h1>Total</h1>\n                <div class='value'>${energy:2} kWh</div>\n            </div>\n       </div>\n       <div class='lower-bar'>\n           <div class='icon-container'>\n               <div class='material-icons icon'>flash_on</div>\n           </div>\n           <div class='description'>Dakikalık tüketilen enerji</div>\n       </div>\n       <div class='right-top-bar'>\n           <div class='icon-container'>\n               <div id='open-statistics' class='material-icons icon'>flash_on</div>\n           </div>\n       </div>\n    </div>\n</div>\n"
+          },
+          "title": "New HTML Value Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "borderBottom": "solid 1px #aaa",
+            "borderRight": "solid 1px #aaa"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "headerButton": []
+          },
+          "enableDataExport": false,
+          "decimals": 5
+        },
+        "id": "aed80ec8-81d4-c6f7-e71f-5ab04f5ded06"
+      },
+      "f9fcbc13-1a44-5114-a294-c6831e3494ab": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "timeseries_bars_flot",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 17,
+        "sizeY": 12,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "786e9c18-a36b-d48e-dadd-ba2caff9219b",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "energy",
+                  "type": "timeseries",
+                  "label": "${entityName}",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.29598200508354666,
+                  "aggregationType": null,
+                  "units": "",
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 0,
+              "timewindowMs": 3600000,
+              "quickInterval": "CURRENT_DAY",
+              "interval": 300000
+            },
+            "aggregation": {
+              "type": "SUM",
+              "limit": 200
+            },
+            "timezone": null
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 14,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Enerji, kWh",
+              "titleAngle": 90
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0
+            },
+            "stack": true,
+            "tooltipIndividual": false,
+            "defaultBarWidth": 600,
+            "barAlignment": "left",
+            "timeForComparison": "previousInterval",
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "showLabels": true
+            }
+          },
+          "title": "Enerji Tüketimi",
+          "dropShadow": false,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.67",
+            "padding": "5px 10px 5px 10px"
+          },
+          "mobileHeight": null,
+          "widgetStyle": {
+            "borderBottom": "solid 1px #aaa",
+            "borderRight": "solid 1px #aaa"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "actions": {},
+          "enableDataExport": true,
+          "units": "kWh",
+          "decimals": 4,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false,
+            "showLatest": false
+          },
+          "showTitleIcon": false,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "displayTimewindow": true,
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "id": "f9fcbc13-1a44-5114-a294-c6831e3494ab"
+      },
+      "bcce547e-b105-aea0-1d0c-81d67a3c4123": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 14,
+        "sizeY": 12,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "786e9c18-a36b-d48e-dadd-ba2caff9219b",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "power",
+                  "type": "timeseries",
+                  "label": "${entityName}",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.5612622701940371,
+                  "aggregationType": null,
+                  "units": "kW",
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 0,
+              "timewindowMs": 3600000,
+              "quickInterval": "CURRENT_DAY",
+              "interval": 300000
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 2500
+            },
+            "timezone": null
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "stack": false,
+            "fontSize": 10,
+            "fontColor": "#545454",
+            "showTooltip": true,
+            "tooltipIndividual": false,
+            "tooltipCumulative": false,
+            "hideZeros": false,
+            "grid": {
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0,
+              "color": "#545454",
+              "backgroundColor": null,
+              "tickColor": "#DDDDDD"
+            },
+            "xaxis": {
+              "title": null,
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "min": null,
+              "max": null,
+              "title": "Aktif Güç",
+              "showLabels": true,
+              "color": "#545454",
+              "tickSize": null,
+              "tickDecimals": 2,
+              "ticksFormatter": ""
+            },
+            "shadowSize": 4,
+            "smoothLines": true,
+            "comparisonEnabled": false,
+            "timeForComparison": "previousInterval",
+            "comparisonCustomIntervalValue": 7200000,
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "title": null,
+              "showLabels": true
+            },
+            "customLegendEnabled": false,
+            "dataKeysListForLabels": []
+          },
+          "title": "Aktif Güç - kW",
+          "dropShadow": false,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.67",
+            "padding": "5px 10px 5px 10px"
+          },
+          "mobileHeight": null,
+          "enableDataExport": true,
+          "widgetStyle": {
+            "borderBottom": "solid 1px #aaa",
+            "borderRight": "solid 1px #aaa"
+          },
+          "units": "A",
+          "decimals": 4,
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false,
+            "showLatest": false
+          },
+          "actions": {},
+          "showTitleIcon": false,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "displayTimewindow": true,
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "id": "bcce547e-b105-aea0-1d0c-81d67a3c4123"
+      },
+      "762e5f79-91b0-5509-5b31-4e8cf685b974": {
+        "isSystemType": true,
+        "bundleAlias": "charts",
+        "typeAlias": "basic_timeseries",
+        "type": "timeseries",
+        "title": "New widget",
+        "sizeX": 14,
+        "sizeY": 11,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "786e9c18-a36b-d48e-dadd-ba2caff9219b",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "voltage",
+                  "type": "timeseries",
+                  "label": "${entityName} V",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.24126703467816135,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "frequency",
+                  "type": "timeseries",
+                  "label": "${entityName} f",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.5145419759228111,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              },
+              "latestDataKeys": null
+            }
+          ],
+          "timewindow": {
+            "hideInterval": false,
+            "hideLastInterval": false,
+            "hideQuickInterval": false,
+            "hideAggregation": false,
+            "hideAggInterval": false,
+            "hideTimezone": false,
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 0,
+              "timewindowMs": 3600000,
+              "quickInterval": "CURRENT_DAY",
+              "interval": 300000
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 2500
+            },
+            "timezone": null
+          },
+          "showTitle": true,
+          "backgroundColor": "#fff",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "8px",
+          "settings": {
+            "shadowSize": 4,
+            "fontColor": "#545454",
+            "fontSize": 10,
+            "xaxis": {
+              "showLabels": true,
+              "color": "#545454"
+            },
+            "yaxis": {
+              "showLabels": true,
+              "color": "#545454",
+              "title": "Gerilim, V",
+              "titleAngle": 90,
+              "tickDecimals": 1
+            },
+            "grid": {
+              "color": "#545454",
+              "tickColor": "#DDDDDD",
+              "verticalLines": false,
+              "horizontalLines": true,
+              "outlineWidth": 0
+            },
+            "stack": false,
+            "tooltipIndividual": false,
+            "smoothLines": true,
+            "timeForComparison": "previousInterval",
+            "xaxisSecond": {
+              "axisPosition": "top",
+              "showLabels": true
+            }
+          },
+          "title": "Gerilim ve Frekans",
+          "dropShadow": false,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "20px",
+            "fontWeight": "bold",
+            "opacity": "0.67",
+            "padding": "5px 10px 5px 10px"
+          },
+          "mobileHeight": null,
+          "enableDataExport": true,
+          "widgetStyle": {
+            "borderBottom": "solid 1px #aaa",
+            "borderRight": "solid 1px #aaa"
+          },
+          "units": "V",
+          "decimals": 2,
+          "useDashboardTimewindow": false,
+          "showLegend": true,
+          "legendConfig": {
+            "direction": "row",
+            "position": "bottom",
+            "sortDataKeys": false,
+            "showMin": false,
+            "showMax": false,
+            "showAvg": false,
+            "showTotal": false,
+            "showLatest": false
+          },
+          "actions": {},
+          "displayTimewindow": true,
+          "showTitleIcon": false,
+          "iconColor": "rgba(0, 0, 0, 0.87)",
+          "iconSize": "24px",
+          "titleTooltip": "",
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": ""
+        },
+        "id": "762e5f79-91b0-5509-5b31-4e8cf685b974"
+      },
+      "e9a259dc-8c3a-901e-6b80-c3ef410ae824": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "entities_table",
+        "type": "latest",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 7.5,
+        "sizeY": 6.5,
+        "config": {
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 86400000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1689495554144,
+                "endTimeMs": 1689581954144
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSearch": true,
+            "enableSelectColumnDisplay": true,
+            "enableStickyHeader": true,
+            "enableStickyAction": true,
+            "reserveSpaceForHiddenAction": "true",
+            "displayEntityName": true,
+            "displayEntityLabel": false,
+            "displayEntityType": false,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "entityName",
+            "useRowStyleFunction": false
+          },
+          "title": "Manevra Takip Tablosu",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "786e9c18-a36b-d48e-dadd-ba2caff9219b",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "maneuver",
+                  "type": "entityField",
+                  "label": "Manevra",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.762389875353388,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "maneuver_start",
+                  "type": "entityField",
+                  "label": "Manevra başlangıç",
+                  "color": "#4caf50",
+                  "settings": {},
+                  "_hash": 0.38545419772939593,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "maneuver_stop",
+                  "type": "entityField",
+                  "label": "Manevra sonlanış",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.4664641427456979,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "num_maneuver",
+                  "type": "timeseries",
+                  "label": "Toplam Manevra Sayısı",
+                  "color": "#ffc107",
+                  "settings": {},
+                  "_hash": 0.6185132915015292,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "active",
+                  "type": "attribute",
+                  "label": "İletişim",
+                  "color": "#607d8b",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": true,
+                    "cellContentFunction": "var color;\nif (value === \"true\") {\n    var text = 'ON'\n    color = '#198038';\n} else {\n    var text = 'Off'\n    color = 'red';\n}\nreturn '<div><span style=\"width: 4px; height: 4px; border-radius: 2px; background: '+color+'; display: inline-block; vertical-align: middle;\"></span><span style=\"padding-left: 8px;\">'+text+'</span></div>';",
+                    "defaultColumnVisibility": "visible",
+                    "columnSelectionToDisplay": "enabled"
+                  },
+                  "_hash": 0.6637120712795179,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "displayTimewindow": true,
+          "showTitleIcon": false,
+          "titleTooltip": "",
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "actions": {
+            "actionCellButton": [
+              {
+                "name": "Manevra Detayı",
+                "icon": "show_chart",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "manevra-tek",
+                "setEntityId": true,
+                "stateEntityParamName": null,
+                "openRightLayout": false,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "3435e60d-cdab-acd3-2ac5-445d7bd69a83"
+              },
+              {
+                "name": "Sil",
+                "icon": "delete",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "custom",
+                "customFunction": "let $injector = widgetContext.$scope.$injector;\nlet dialogs = $injector.get(widgetContext.servicesMap.get('dialogs'));\nlet deviceService = $injector.get(widgetContext.servicesMap.get('deviceService'));\n\nopenDeleteEntityDialog();\n\nfunction openDeleteEntityDialog() {\n    let title = '\"' +  entityName + '\"' + \" Sil\";\n    let content = '\"' +\n        entityName + '\" silmek istediğinize emin misiniz?';\n    dialogs.confirm(title, content, 'İPTAL', 'SİL').subscribe(\n        function(result) {\n            if (result) {\n                deleteEntity();\n            }\n        }\n    );\n}\n\nfunction deleteEntity() {\n    deviceService.deleteDevice(entityId.id).subscribe(\n        function success() {\n            widgetContext.updateAliases();\n        },\n        function fail() {\n            showErrorDialog();\n        }\n    );\n}\n\nfunction showErrorDialog() {\n    let title = 'Error';\n    let content = 'An error occurred while deleting the sensor. Please try again.';\n    dialogs.alert(title, content, 'CLOSE').subscribe(\n        function(result) {}\n    );\n}",
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "70b6c5fd-1451-dfb2-8373-5e8ba5d6ae31"
+              }
+            ],
+            "rowClick": [
+              {
+                "name": "Manevra Detayı",
+                "icon": "more_horiz",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "maneuver",
+                "setEntityId": true,
+                "stateEntityParamName": null,
+                "openRightLayout": false,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "bcba3605-ee18-c95d-ae71-7afd66bc51e1"
+              }
+            ]
+          }
+        },
+        "row": 0,
+        "col": 0,
+        "id": "e9a259dc-8c3a-901e-6b80-c3ef410ae824"
+      },
+      "7ab50ea2-5b4f-f388-79ed-939d4d994e68": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "html_value_card",
+        "type": "latest",
+        "title": "New widget",
+        "sizeX": 120,
+        "sizeY": 4,
+        "config": {
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "3078311a-f530-cd9e-b33c-75b056b0724a",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "hwVersion",
+                  "type": "attribute",
+                  "label": "hwVersion",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.6514375730430242
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1689498991252,
+                "endTimeMs": 1689585391252
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "AVG",
+              "limit": 25000
+            }
+          },
+          "showTitle": false,
+          "backgroundColor": "rgba(245, 245, 245, 0)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "0px",
+          "settings": {
+            "cardHtml": "<div class=\"navbar\">\n    <a id='homeId' class=\"active\">\n        <i id='homeId' class=\"material-icons\">pie_chart</i>\n        <div id='homeId' class=\"menutext\">Overview</div>\n    </a>\n    <a id='settingsId'>\n        <i id='settingsId' class=\"material-icons\">settings</i>\n        <div id='settingsId' class=\"menutext\">Manevralar</div>\n    </a>\n    <a id='chartsId'>\n        <i id='chartsId' class=\"material-icons\">timeline</i>\n        <div id='chartsId' class=\"menutext\">Enerji Tüketimi</div>\n    </a>\n    <a id='maintenanceId'>\n        <i id='maintenanceId' class=\"material-icons\">build</i>\n        <div id='maintenanceId' class=\"menutext\">Onarım</div>\n    </a>\n    <a id='historyId'>\n        <i id='historyId' class=\"material-icons\">list</i>\n        <div id='historyId' class=\"menutext\">Geçmiş</div>\n    </a>\n    <a id='mmsId'>\n        <i id='mmsId' class=\"material-icons\">device_hub</i>\n        <div id='mmsId' class=\"menutext\">MMS</div>\n    </a>\n    <a id='documentsId'>\n        <i id='documentsId' class=\"material-icons\">attachment</i>\n        <div id='documentsId' class=\"menutext\">Dökümanlar</div>\n    </a>\n</div>",
+            "cardCss": ".navbar {\n    list-style-type: none;\n    height: 100%;\n}\n\n.navbar a {\n    height: 100%;\n    float: left;\n    padding: 0 15px 0 15px;\n    margin: 0 5px 0 5px;\n    color: black;\n    color: rgba(0, 0, 0, 0.87);\n    text-decoration: none;\n    text-align: center;\n    text-transform: uppercase;\n    display:flex;\n    justify-content:center;\n    align-items:center;\n}\n\n.navbar a:hover {\n    color: black;\n    color: rgba(0, 0, 0, 0.87);\n    background-color: #e0e0e0;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n    border: 0 solid #e0e0e0;\n}\n\n.active {\n    color: #fafafa !important;\n    background-color: #f44336 !important;\n    -moz-border-radius: 5px 5px 5px 5px;\n    -webkit-border-radius: 5px 5px 5px 5px;\n    border-radius: 5px 5px 5px 5px;\n}\n\n.material-icons {\n    font-size: 20px;\n    padding-right: 5px;\n}\n\n[data-md-tooltip] {\n    position: relative;\n}\n\n@media screen and (max-width : 960px){\n    .menutext {\n        display: none;\n    }\n\n    [data-md-tooltip]:before {\n        content: attr(data-md-tooltip);\n        position: absolute;\n        bottom: -35px;\n        left: 50%;\n        padding: 8px;\n        transform: translateX(-50%) scale(0);\n        transition: transform 0.3s ease-in-out;\n        transform-origin: top;\n        background: #616161e6;\n        color: white;\n        border-radius: 2px;\n        font-size: 12px;\n    }\n\n    [data-md-tooltip]:hover:before {\n        transform: translateX(-50%) scale(1);\n    }\n    \n    .material-icons {\n        font-size: 28px;\n    }\n}\n"
+          },
+          "title": "New HTML Value Card",
+          "dropShadow": false,
+          "enableFullscreen": false,
+          "widgetStyle": {
+            "border-radius": "10px 10px 10px 10px",
+            "-moz-border-radius": "10px 10px 10px 10px",
+            "-webkit-border-radius": "10px 10px 10px 10px",
+            "border": "0px hidden #000000"
+          },
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400
+          },
+          "useDashboardTimewindow": true,
+          "showLegend": false,
+          "actions": {
+            "headerButton": [],
+            "elementClick": [
+              {
+                "name": "mmsId",
+                "icon": "more_horiz",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "chart",
+                "setEntityId": true,
+                "stateEntityParamName": "mu",
+                "openRightLayout": null,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "d3710d00-ae4d-9c0b-4762-a5bf3590c6da"
+              },
+              {
+                "name": "settingsId",
+                "icon": "more_horiz",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "manevra",
+                "setEntityId": false,
+                "stateEntityParamName": "tool",
+                "openRightLayout": null,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "182ec0f4-82d2-4e1f-1f6f-3ee4419c145c"
+              },
+              {
+                "name": "chartsId",
+                "icon": "more_horiz",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "chart",
+                "setEntityId": false,
+                "stateEntityParamName": null,
+                "openRightLayout": null,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "039cf6ca-1b2a-8b16-839f-6ce5b8e0c3c7"
+              },
+              {
+                "id": "4bf29254-8f81-bbad-4dac-f88a17630030",
+                "name": "maintenanceId",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "tool_maintenance",
+                "setEntityId": false
+              },
+              {
+                "id": "f3ba9110-ae3c-11de-b663-aa8fefc53cbf",
+                "name": "historyId",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "tool_history",
+                "setEntityId": false
+              },
+              {
+                "id": "663f127a-9a2c-afbb-e2f5-3eec1d414065",
+                "name": "documentsId",
+                "icon": "more_horiz",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "tool_documents",
+                "setEntityId": false
+              },
+              {
+                "name": "homeId",
+                "icon": "more_horiz",
+                "useShowWidgetActionFunction": null,
+                "showWidgetActionFunction": "return true;",
+                "type": "openDashboardState",
+                "targetDashboardStateId": "default",
+                "setEntityId": true,
+                "stateEntityParamName": null,
+                "openRightLayout": false,
+                "openInSeparateDialog": false,
+                "openInPopover": false,
+                "id": "858f01a5-8cb7-82a9-872e-7c885251d9ab"
+              }
+            ]
+          },
+          "displayTimewindow": true,
+          "decimals": null,
+          "enableDataExport": false,
+          "titleTooltip": ""
+        },
+        "id": "7ab50ea2-5b4f-f388-79ed-939d4d994e68"
+      },
+      "7da2f104-f52e-b72f-1ac7-6167b6b37ba4": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "entities_table",
+        "type": "latest",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 7.5,
+        "sizeY": 6.5,
+        "config": {
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 86400000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1689499438028,
+                "endTimeMs": 1689585838028
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "enableSearch": true,
+            "enableSelectColumnDisplay": true,
+            "enableStickyHeader": true,
+            "enableStickyAction": true,
+            "reserveSpaceForHiddenAction": "true",
+            "displayEntityName": true,
+            "displayEntityLabel": false,
+            "displayEntityType": false,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "entityName",
+            "useRowStyleFunction": false
+          },
+          "title": "New Entities table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "98e2c243-8889-4ec5-5e66-7cd792c00c78",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "active",
+                  "type": "attribute",
+                  "label": "İletişim",
+                  "color": "#ffc107",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": true,
+                    "cellContentFunction": "var color;\nif (value === \"true\") {\n    var text = 'ON'\n    color = '#198038';\n} else {\n    var text = 'Off'\n    color = 'red';\n}\nreturn '<div><span style=\"width: 4px; height: 4px; border-radius: 2px; background: '+color+'; display: inline-block; vertical-align: middle;\"></span><span style=\"padding-left: 8px;\">'+text+'</span></div>';",
+                    "defaultColumnVisibility": "visible",
+                    "columnSelectionToDisplay": "enabled"
+                  },
+                  "_hash": 0.578907491529459,
+                  "aggregationType": null,
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "status",
+                  "type": "timeseries",
+                  "label": "Durum",
+                  "color": "#4caf50",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": true,
+                    "cellStyleFunction": "return {\n    fontWeight: 600\n};",
+                    "useCellContentFunction": true,
+                    "cellContentFunction": "return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #5553AF;\">'+value+'</span>' : '';",
+                    "defaultColumnVisibility": "visible",
+                    "columnSelectionToDisplay": "enabled"
+                  },
+                  "_hash": 0.7547615897296396,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "cargo",
+                  "type": "timeseries",
+                  "label": "Yük Durumu",
+                  "color": "#2196f3",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": false,
+                    "useCellContentFunction": true,
+                    "cellContentFunction": "if(value){\n    var textColor = '#008594';\n    var background = '111, 116, 242';\n    \n    return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #008594;\">'+value+'</span>' : '';\n} else {\n    return 'No data';\n}",
+                    "defaultColumnVisibility": "visible",
+                    "columnSelectionToDisplay": "enabled"
+                  },
+                  "_hash": 0.1666758082425417,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "power",
+                  "type": "timeseries",
+                  "label": "Güç",
+                  "color": "#f44336",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": true,
+                    "cellStyleFunction": "return {\n    color:'rgb(255, 106, 12)',\n    fontWeight: 600\n}",
+                    "useCellContentFunction": false,
+                    "defaultColumnVisibility": "visible",
+                    "columnSelectionToDisplay": "enabled"
+                  },
+                  "_hash": 0.1971114696477405,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "displayTimewindow": true,
+          "showTitleIcon": false,
+          "widgetStyle": {},
+          "widgetCss": "",
+          "pageSize": 1024,
+          "noDataDisplayMessage": "",
+          "titleTooltip": ""
+        },
+        "row": 0,
+        "col": 0,
+        "id": "7da2f104-f52e-b72f-1ac7-6167b6b37ba4"
+      },
+      "83bf6a80-cf4d-3309-a95c-fbb78706e3df": {
+        "isSystemType": true,
+        "bundleAlias": "cards",
+        "typeAlias": "entities_table",
+        "type": "latest",
+        "title": "New widget",
+        "image": null,
+        "description": null,
+        "sizeX": 7.5,
+        "sizeY": 6.5,
+        "config": {
+          "timewindow": {
+            "displayValue": "",
+            "selectedTab": 0,
+            "realtime": {
+              "realtimeType": 1,
+              "interval": 1000,
+              "timewindowMs": 86400000,
+              "quickInterval": "CURRENT_DAY"
+            },
+            "history": {
+              "historyType": 0,
+              "interval": 1000,
+              "timewindowMs": 60000,
+              "fixedTimewindow": {
+                "startTimeMs": 1689516449798,
+                "endTimeMs": 1689602849798
+              },
+              "quickInterval": "CURRENT_DAY"
+            },
+            "aggregation": {
+              "type": "NONE",
+              "limit": 200
+            }
+          },
+          "showTitle": true,
+          "backgroundColor": "rgb(255, 255, 255)",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "padding": "4px",
+          "settings": {
+            "entitiesTitle": "",
+            "enableSearch": true,
+            "enableSelectColumnDisplay": true,
+            "enableStickyHeader": true,
+            "enableStickyAction": true,
+            "reserveSpaceForHiddenAction": "true",
+            "displayEntityName": true,
+            "entityNameColumnTitle": "",
+            "displayEntityLabel": false,
+            "displayEntityType": true,
+            "displayPagination": true,
+            "defaultPageSize": 10,
+            "defaultSortOrder": "entityName",
+            "useRowStyleFunction": false
+          },
+          "title": "New Entities table",
+          "dropShadow": true,
+          "enableFullscreen": true,
+          "titleStyle": {
+            "fontSize": "16px",
+            "fontWeight": 400,
+            "padding": "5px 10px 5px 10px"
+          },
+          "useDashboardTimewindow": false,
+          "showLegend": false,
+          "datasources": [
+            {
+              "type": "entity",
+              "name": null,
+              "entityAliasId": "c1de5ae7-22d2-03ae-c1f9-9e3c82ce8e20",
+              "filterId": null,
+              "dataKeys": [
+                {
+                  "name": "status",
+                  "type": "timeseries",
+                  "label": "Durum",
+                  "color": "#4caf50",
+                  "settings": {
+                    "columnWidth": "0px",
+                    "useCellStyleFunction": true,
+                    "cellStyleFunction": "return {\n    fontWeight: 600\n};",
+                    "useCellContentFunction": true,
+                    "cellContentFunction": "return value ? '<span style=\"background: rgba(111, 116, 242, 0.08); border-radius: 16px; padding: 4px 8px; color: #5553AF;\">'+value+'</span>' : '';",
+                    "defaultColumnVisibility": "visible",
+                    "columnSelectionToDisplay": "enabled"
+                  },
+                  "_hash": 0.0067795533361203475,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "cargo",
+                  "type": "timeseries",
+                  "label": "Yük Durumu",
+                  "color": "#2196f3",
+                  "settings": {},
+                  "_hash": 0.6328173457091308,
+                  "aggregationType": "NONE",
+                  "units": null,
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                },
+                {
+                  "name": "power",
+                  "type": "timeseries",
+                  "label": "Güç",
+                  "color": "#f44336",
+                  "settings": {},
+                  "_hash": 0.7718657730814609,
+                  "aggregationType": "NONE",
+                  "units": "kWh",
+                  "decimals": null,
+                  "funcBody": null,
+                  "usePostProcessing": null,
+                  "postFuncBody": null
+                }
+              ],
+              "alarmFilterConfig": {
+                "statusList": [
+                  "ACTIVE"
+                ]
+              }
+            }
+          ],
+          "displayTimewindow": true
+        },
+        "row": 0,
+        "col": 0,
+        "id": "83bf6a80-cf4d-3309-a95c-fbb78706e3df"
+      }
+    },
+    "states": {
+      "default": {
+        "name": "Nem Port Main Dashboard",
+        "root": true,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "492082b6-8a9a-881a-022a-b4507f38cbe7": {
+                "sizeX": 48,
+                "sizeY": 22,
+                "row": 1,
+                "col": 0
+              },
+              "7ab50ea2-5b4f-f388-79ed-939d4d994e68": {
+                "sizeX": 48,
+                "sizeY": 1,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 48,
+              "margin": 5,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": true,
+              "backgroundImageUrl": null,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      },
+      "chart": {
+        "name": "${entityName}",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "aed80ec8-81d4-c6f7-e71f-5ab04f5ded06": {
+                "sizeX": 10,
+                "sizeY": 10,
+                "row": 1,
+                "col": 0
+              },
+              "f9fcbc13-1a44-5114-a294-c6831e3494ab": {
+                "sizeX": 19,
+                "sizeY": 10,
+                "mobileHeight": null,
+                "row": 1,
+                "col": 10
+              },
+              "bcce547e-b105-aea0-1d0c-81d67a3c4123": {
+                "sizeX": 19,
+                "sizeY": 10,
+                "mobileHeight": null,
+                "row": 1,
+                "col": 29
+              },
+              "762e5f79-91b0-5509-5b31-4e8cf685b974": {
+                "sizeX": 19,
+                "sizeY": 11,
+                "mobileHeight": null,
+                "row": 11,
+                "col": 29
+              },
+              "e9a259dc-8c3a-901e-6b80-c3ef410ae824": {
+                "sizeX": 29,
+                "sizeY": 11,
+                "row": 11,
+                "col": 0
+              },
+              "7ab50ea2-5b4f-f388-79ed-939d4d994e68": {
+                "sizeX": 48,
+                "sizeY": 1,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 48,
+              "margin": 5,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": true,
+              "backgroundImageUrl": null,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      },
+      "manevra": {
+        "name": "manevra",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "7da2f104-f52e-b72f-1ac7-6167b6b37ba4": {
+                "sizeX": 48,
+                "sizeY": 31,
+                "row": 1,
+                "col": 0
+              },
+              "7ab50ea2-5b4f-f388-79ed-939d4d994e68": {
+                "sizeX": 48,
+                "sizeY": 1,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 48,
+              "margin": 5,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "backgroundImageUrl": null,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      },
+      "manevra-tek": {
+        "name": "${entityName}",
+        "root": false,
+        "layouts": {
+          "main": {
+            "widgets": {
+              "83bf6a80-cf4d-3309-a95c-fbb78706e3df": {
+                "sizeX": 48,
+                "sizeY": 22,
+                "row": 1,
+                "col": 0
+              },
+              "7ab50ea2-5b4f-f388-79ed-939d4d994e68": {
+                "sizeX": 48,
+                "sizeY": 1,
+                "row": 0,
+                "col": 0
+              }
+            },
+            "gridSettings": {
+              "backgroundColor": "#eeeeee",
+              "columns": 48,
+              "margin": 5,
+              "outerMargin": true,
+              "backgroundSizeMode": "100%",
+              "autoFillHeight": false,
+              "backgroundImageUrl": null,
+              "mobileAutoFillHeight": false,
+              "mobileRowHeight": 70
+            }
+          }
+        }
+      }
+    },
+    "entityAliases": {
+      "786e9c18-a36b-d48e-dadd-ba2caff9219b": {
+        "id": "786e9c18-a36b-d48e-dadd-ba2caff9219b",
+        "alias": "EAs",
+        "filter": {
+          "type": "deviceSearchQuery",
+          "resolveMultiple": true,
+          "rootStateEntity": true,
+          "stateEntityParamName": null,
+          "defaultStateEntity": null,
+          "rootEntity": null,
+          "direction": "FROM",
+          "maxLevel": 5,
+          "fetchLastLevelOnly": false,
+          "relationType": "Contains",
+          "deviceTypes": [
+            "sayac"
+          ]
+        }
+      },
+      "1ee23e14-147a-ba76-87cd-8aac72751c5e": {
+        "id": "1ee23e14-147a-ba76-87cd-8aac72751c5e",
+        "alias": "Current Device",
+        "filter": {
+          "type": "stateEntity",
+          "resolveMultiple": true,
+          "stateEntityParamName": null,
+          "defaultStateEntity": null
+        }
+      },
+      "3078311a-f530-cd9e-b33c-75b056b0724a": {
+        "id": "3078311a-f530-cd9e-b33c-75b056b0724a",
+        "alias": "Assets",
+        "filter": {
+          "type": "entityList",
+          "resolveMultiple": true,
+          "entityType": "ASSET",
+          "entityList": [
+            "66a36c90-2494-11ee-9c0b-a53a7980c9e6",
+            "525fbdb0-2494-11ee-9c0b-a53a7980c9e6",
+            "61098e40-2494-11ee-9c0b-a53a7980c9e6",
+            "58c417f0-2494-11ee-9c0b-a53a7980c9e6",
+            "3d5b9da0-2497-11ee-9c0b-a53a7980c9e6"
+          ]
+        }
+      },
+      "224bac5d-90f5-bfd2-8b24-a300072772f5": {
+        "id": "224bac5d-90f5-bfd2-8b24-a300072772f5",
+        "alias": "MU",
+        "filter": {
+          "type": "deviceSearchQuery",
+          "resolveMultiple": false,
+          "rootStateEntity": true,
+          "stateEntityParamName": "tool",
+          "defaultStateEntity": null,
+          "rootEntity": null,
+          "direction": "TO",
+          "maxLevel": 1,
+          "relationType": "Placed On",
+          "deviceTypes": [
+            "MMS01-MU"
+          ]
+        }
+      },
+      "c1de5ae7-22d2-03ae-c1f9-9e3c82ce8e20": {
+        "id": "c1de5ae7-22d2-03ae-c1f9-9e3c82ce8e20",
+        "alias": "EA-Current",
+        "filter": {
+          "type": "stateEntity",
+          "resolveMultiple": false,
+          "stateEntityParamName": null,
+          "defaultStateEntity": null
+        }
+      },
+      "98e2c243-8889-4ec5-5e66-7cd792c00c78": {
+        "id": "98e2c243-8889-4ec5-5e66-7cd792c00c78",
+        "alias": "All-Devices",
+        "filter": {
+          "type": "relationsQuery",
+          "resolveMultiple": true,
+          "rootStateEntity": false,
+          "stateEntityParamName": null,
+          "defaultStateEntity": null,
+          "rootEntity": {
+            "entityType": "CUSTOMER",
+            "id": "d8fc59b0-2542-11ee-9c0b-a53a7980c9e6"
+          },
+          "direction": "FROM",
+          "maxLevel": 5,
+          "fetchLastLevelOnly": false,
+          "filters": [
+            {
+              "relationType": "Contains",
+              "entityTypes": [
+                "DEVICE"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "filters": {},
+    "timewindow": {
+      "hideInterval": false,
+      "hideLastInterval": false,
+      "hideQuickInterval": false,
+      "hideAggregation": false,
+      "hideAggInterval": false,
+      "hideTimezone": false,
+      "selectedTab": 0,
+      "realtime": {
+        "realtimeType": 0,
+        "timewindowMs": 7200000,
+        "quickInterval": "CURRENT_DAY",
+        "interval": 15000
+      },
+      "aggregation": {
+        "type": "AVG",
+        "limit": 25000
+      },
+      "timezone": null
+    },
+    "settings": {
+      "stateControllerId": "entity",
+      "showTitle": false,
+      "showDashboardsSelect": true,
+      "showEntitiesSelect": true,
+      "showDashboardTimewindow": true,
+      "showDashboardExport": true,
+      "toolbarAlwaysOpen": true,
+      "titleColor": "rgba(0,0,0,0.870588)",
+      "showDashboardLogo": false,
+      "dashboardLogoUrl": null,
+      "hideToolbar": true,
+      "showFilters": true,
+      "showUpdateDashboardImage": true,
+      "dashboardCss": ""
+    }
+  },
+  "externalId": null,
+  "name": "Nem Port Main Dashboard"
+}
