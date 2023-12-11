@@ -36,62 +36,62 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 150) {
             msg.maneuver = "Vira Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b000100;
+            msg.state = parseInt('000100',2);
         } else if (msg.CurrentTotal >= 150 && msg.CurrentTotal < 215) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 215 && msg.CurrentTotal < 222.5) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 222.5 && msg.CurrentTotal < 250) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 250 && msg.CurrentTotal < 261) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 261 && msg.CurrentTotal < 262) {
             msg.maneuver = "Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010100;
+            msg.state = parseInt('010100',2);
         } else if (msg.CurrentTotal >= 262 && msg.CurrentTotal < 270) {
             msg.maneuver = "Mayna Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b011000;
+            msg.state = parseInt('011000',2);
         } else if (msg.CurrentTotal >= 270 && msg.CurrentTotal < 400) {
             msg.maneuver = "Mayna Trolley Dolu Hızlı";
-            msg.state = 0b011011;
+            msg.state = parseInt('011011',2);
 
             msg.load = "Yüklü";
         } else if (msg.CurrentTotal >= 400 && msg.CurrentTotal < 435) {
             msg.maneuver = "Gantry Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011111;
+            msg.state = parseInt('011111',2);
         } else if (msg.CurrentTotal >= 435 && msg.CurrentTotal < 649) {
             msg.maneuver = "Gantry Yavaş";
             msg.load = "Yüklü";
-            msg.state = 0b011101;
+            msg.state = parseInt('011101',2);
 
         } else if (msg.CurrentTotal >= 649 && msg.CurrentTotal < 982) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else if (msg.CurrentTotal >= 982) {
             msg.maneuver = "Vira Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100111;
+            msg.state = parseInt('100111',2);
 
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -101,7 +101,7 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
 	        msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
             
         } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
@@ -109,7 +109,7 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -118,11 +118,11 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         if (msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 145 && msg.CurrentTotal < 155) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 155 && msg.CurrentTotal < 190) {
             msg.maneuver = "Dönüş Boş Yavaş";
             msg.load = "Yüksüz";
@@ -132,7 +132,7 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         } else if (msg.CurrentTotal >= 210 && msg.CurrentTotal < 290) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 290 && msg.CurrentTotal < 340) {
             msg.maneuver = "Bom Dik Boş Yavaş";
             msg.load = "Yüksüz";
@@ -148,7 +148,7 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         } else if (msg.CurrentTotal >= 618 && msg.CurrentTotal < 630) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 630 && msg.CurrentTotal < 850) {
             msg.maneuver = "Yürüyüş Boş Hızlı";
             msg.load = "Yüksüz";
@@ -158,11 +158,11 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         } else if (msg.CurrentTotal >= 1200) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -174,7 +174,7 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
 
@@ -182,7 +182,9 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     return {msg: msg, metadata: metadata};
 }
 
-else if(msg["Active Enegy-CL"]){
+
+
+else if(msg["Active Enegy-CL"]){    //PM2100
     msg["Active Enegy-CL"] = msg["Active Enegy-CL"]/1000;
     msg["Active Enegy-CH"] = msg["Active Enegy-CH"]/1000;
 	
@@ -224,58 +226,58 @@ else if(msg["Active Enegy-CL"]){
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 150) {
             msg.maneuver = "Vira Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b000100;
+            msg.state = parseInt('000100',2);
         } else if (msg.CurrentTotal >= 150 && msg.CurrentTotal < 215) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 215 && msg.CurrentTotal < 222.5) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 222.5 && msg.CurrentTotal < 250) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 250 && msg.CurrentTotal < 261) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 261 && msg.CurrentTotal < 262) {
             msg.maneuver = "Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010100;
+            msg.state = parseInt('010100',2);
 
         } else if (msg.CurrentTotal >= 262 && msg.CurrentTotal < 270) {
             msg.maneuver = "Mayna Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b011000;
+            msg.state = parseInt('011000',2);
 
         } else if (msg.CurrentTotal >= 270 && msg.CurrentTotal < 400) {
             msg.maneuver = "Mayna Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011011;
+            msg.state = parseInt('011011',2);
 
         } else if (msg.CurrentTotal >= 400 && msg.CurrentTotal < 435) {
             msg.maneuver = "Gantry Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011111;
+            msg.state = parseInt('011111',2);
         } else if (msg.CurrentTotal >= 435 && msg.CurrentTotal < 649) {
             msg.maneuver = "Gantry Yavaş";
             msg.load = "Yüklü";
-            msg.state = 0b011101;
+            msg.state = parseInt('011101',2);
         } else if (msg.CurrentTotal >= 649 && msg.CurrentTotal < 982) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else if (msg.CurrentTotal >= 982) {
             msg.maneuver = "Vira Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100111;
+            msg.state = parseInt('100111',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
@@ -288,14 +290,14 @@ else if(msg["Active Enegy-CL"]){
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -303,11 +305,11 @@ else if(msg["Active Enegy-CL"]){
         if (msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 145 && msg.CurrentTotal < 155) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 155 && msg.CurrentTotal < 190) {
             msg.maneuver = "Dönüş Boş Yavaş";
         } else if (msg.CurrentTotal >= 190 && msg.CurrentTotal < 210) {
@@ -316,7 +318,7 @@ else if(msg["Active Enegy-CL"]){
         } else if (msg.CurrentTotal >= 210 && msg.CurrentTotal < 290) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 290 && msg.CurrentTotal < 340) {
             msg.maneuver = "Bom Dik Boş Yavaş";
             msg.load = "Yüksüz";
@@ -332,7 +334,7 @@ else if(msg["Active Enegy-CL"]){
         } else if (msg.CurrentTotal >= 618 && msg.CurrentTotal < 630) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 630 && msg.CurrentTotal < 850) {
             msg.maneuver = "Yürüyüş Boş Hızlı";
             msg.load = "Yüksüz";
@@ -342,11 +344,11 @@ else if(msg["Active Enegy-CL"]){
         } else if (msg.CurrentTotal >= 1200) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -358,7 +360,7 @@ else if(msg["Active Enegy-CL"]){
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
 
@@ -410,63 +412,63 @@ else if(msg["Active Energy-Import"]){  //PM2100
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 150) {
             msg.maneuver = "Vira Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b000100;
+            msg.state = parseInt('000100',2);
         } else if (msg.CurrentTotal >= 150 && msg.CurrentTotal < 215) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 215 && msg.CurrentTotal < 222.5) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 222.5 && msg.CurrentTotal < 250) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 250 && msg.CurrentTotal < 261) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 261 && msg.CurrentTotal < 262) {
             msg.maneuver = "Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010100;
+            msg.state = parseInt('010100',2);
 
         } else if (msg.CurrentTotal >= 262 && msg.CurrentTotal < 270) {
             msg.maneuver = "Mayna Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b011000;
+            msg.state = parseInt('011000',2);
 
         } else if (msg.CurrentTotal >= 270 && msg.CurrentTotal < 400) {
             msg.maneuver = "Mayna Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011011;
+            msg.state = parseInt('011011',2);
 
         } else if (msg.CurrentTotal >= 400 && msg.CurrentTotal < 435) {
             msg.maneuver = "Gantry Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011111;
+            msg.state = parseInt('011111',2);
 
         } else if (msg.CurrentTotal >= 435 && msg.CurrentTotal < 649) {
             msg.maneuver = "Gantry Yavaş";
             msg.load = "Yüklü";
-            msg.state = 0b011101;
+            msg.state = parseInt('011101',2);
         } else if (msg.CurrentTotal >= 649 && msg.CurrentTotal < 982) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else if (msg.CurrentTotal >= 982) {
             msg.maneuver = "Vira Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100111;
+            msg.state = parseInt('100111',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -476,14 +478,14 @@ else if(msg["Active Energy-Import"]){  //PM2100
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -491,11 +493,11 @@ else if(msg["Active Energy-Import"]){  //PM2100
         if (msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 145 && msg.CurrentTotal < 155) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 155 && msg.CurrentTotal < 190) {
             msg.maneuver = "Dönüş Boş Yavaş";
         } else if (msg.CurrentTotal >= 190 && msg.CurrentTotal < 210) {
@@ -504,7 +506,7 @@ else if(msg["Active Energy-Import"]){  //PM2100
         } else if (msg.CurrentTotal >= 210 && msg.CurrentTotal < 290) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 290 && msg.CurrentTotal < 340) {
             msg.maneuver = "Bom Dik Boş Yavaş";
             msg.load = "Yüksüz";
@@ -520,7 +522,7 @@ else if(msg["Active Energy-Import"]){  //PM2100
         } else if (msg.CurrentTotal >= 618 && msg.CurrentTotal < 630) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 630 && msg.CurrentTotal < 850) {
             msg.maneuver = "Yürüyüş Boş Hızlı";
             msg.load = "Yüksüz";
@@ -530,11 +532,11 @@ else if(msg["Active Energy-Import"]){  //PM2100
         } else if (msg.CurrentTotal >= 1200) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -546,7 +548,7 @@ else if(msg["Active Energy-Import"]){  //PM2100
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
 
@@ -556,7 +558,7 @@ else if(msg["Active Energy-Import"]){  //PM2100
 }
 
 
-else if(msg["Active Energy"]){
+else if(msg["Active Energy"]){      //UMG508
     msg["Active Energy"] = msg["Active Energy"]/1000;
 
 
@@ -594,62 +596,62 @@ else if(msg["Active Energy"]){
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 150) {
             msg.maneuver = "Vira Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b000100;
+            msg.state = parseInt('000100',2);
         } else if (msg.CurrentTotal >= 150 && msg.CurrentTotal < 215) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 215 && msg.CurrentTotal < 222.5) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 222.5 && msg.CurrentTotal < 250) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 250 && msg.CurrentTotal < 261) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 261 && msg.CurrentTotal < 262) {
             msg.maneuver = "Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010100;
+            msg.state = parseInt('010100',2);
 
         } else if (msg.CurrentTotal >= 262 && msg.CurrentTotal < 270) {
             msg.maneuver = "Mayna Trolley Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b011000;
+            msg.state = parseInt('011000',2);
 
         } else if (msg.CurrentTotal >= 270 && msg.CurrentTotal < 400) {
             msg.maneuver = "Mayna Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011011;
+            msg.state = parseInt('011011',2);
 
         } else if (msg.CurrentTotal >= 400 && msg.CurrentTotal < 435) {
             msg.maneuver = "Gantry Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b011111;
+            msg.state = parseInt('011111',2);
         } else if (msg.CurrentTotal >= 435 && msg.CurrentTotal < 649) {
             msg.maneuver = "Gantry Yavaş";
             msg.load = "Yüklü";
-            msg.state = 0b011101;
+            msg.state = parseInt('011101',2);
         } else if (msg.CurrentTotal >= 649 && msg.CurrentTotal < 982) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else if (msg.CurrentTotal >= 982) {
             msg.maneuver = "Vira Trolley Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100111;
+            msg.state = parseInt('100111',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -659,14 +661,14 @@ else if(msg["Active Energy"]){
         if (msg.CurrentTotal < 100) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
-            msg.state = 0b000000;
+            msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -674,11 +676,11 @@ else if(msg["Active Energy"]){
         if (msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
-            msg.state = 0b001000;
+            msg.state = parseInt('001000',2);
         } else if (msg.CurrentTotal >= 145 && msg.CurrentTotal < 155) {
             msg.maneuver = "Mayna Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b010000;
+            msg.state = parseInt('010000',2);
         } else if (msg.CurrentTotal >= 155 && msg.CurrentTotal < 190) {
             msg.maneuver = "Dönüş Boş Yavaş";
         } else if (msg.CurrentTotal >= 190 && msg.CurrentTotal < 210) {
@@ -687,7 +689,7 @@ else if(msg["Active Energy"]){
         } else if (msg.CurrentTotal >= 210 && msg.CurrentTotal < 290) {
             msg.maneuver = "Vira Boş Yavaş";
             msg.load = "Yüksüz";
-            msg.state = 0b001100;
+            msg.state = parseInt('001100',2);
         } else if (msg.CurrentTotal >= 290 && msg.CurrentTotal < 340) {
             msg.maneuver = "Bom Dik Boş Yavaş";
             msg.load = "Yüksüz";
@@ -703,7 +705,7 @@ else if(msg["Active Energy"]){
         } else if (msg.CurrentTotal >= 618 && msg.CurrentTotal < 630) {
             msg.maneuver = "Mayna Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b010011;
+            msg.state = parseInt('010011',2);
         } else if (msg.CurrentTotal >= 630 && msg.CurrentTotal < 850) {
             msg.maneuver = "Yürüyüş Boş Hızlı";
             msg.load = "Yüksüz";
@@ -713,11 +715,11 @@ else if(msg["Active Energy"]){
         } else if (msg.CurrentTotal >= 1200) {
             msg.maneuver = "Vira Dolu Hızlı";
             msg.load = "Yüklü";
-            msg.state = 0b100011;
+            msg.state = parseInt('100011',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
     
@@ -729,7 +731,7 @@ else if(msg["Active Energy"]){
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
-            msg.state = 0b111111;
+            msg.state = parseInt('111111',2);
         }
     }
 
