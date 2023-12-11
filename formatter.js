@@ -115,7 +115,13 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     
         
     if(msg.devName.indexOf("MHC") !== -1 && msg.devName !== "A-MHC03"){
-        if (msg.CurrentTotal < 145) {
+        
+        if (msg.CurrentTotal < 100) {
+            msg.maneuver = "Enerjisiz";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('000000',2);
+    
+        } else if (msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
             msg.state = parseInt('001000',2);
@@ -168,9 +174,15 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     
     if(msg.devName == "A-MHC03"){
         
-        if (msg.CurrentTotal < 100) {
-            msg.maneuver = "Beklemede";
+        if (msg.CurrentTotal < 10) {
+            msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
+            msg.state = parseInt('000000',2);
+    
+        } else if (msg.CurrentTotal < 100) {
+            msg.maneuver = "Boşta Bekleme";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('001000',2);
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
