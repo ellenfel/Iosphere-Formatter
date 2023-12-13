@@ -316,8 +316,10 @@ else if(msg["Active Enegy-CL"]){    //PM2100
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 10 && msg.CurrentTotal < 330) {
-            msg.maneuver = "Beklemede";
+            msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
+            msg.state = parseInt('001000',2);
+
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
@@ -389,7 +391,7 @@ else if(msg["Active Enegy-CL"]){    //PM2100
             msg.state = parseInt('000000',2);
 
         } else if (msg.CurrentTotal >= 10 && msg.CurrentTotal < 100) {
-            msg.maneuver = "Beklemede";
+            msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
             msg.state = parseInt('001000',2);
 
@@ -522,7 +524,7 @@ else if(msg["Active Energy-Import"]){  //PM2100
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
         } else if (msg.CurrentTotal >= 5 && msg.CurrentTotal < 330) {
-            msg.maneuver = "Beklemede";
+            msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
         } else {
             msg.maneuver = "Contact system administrator.";
