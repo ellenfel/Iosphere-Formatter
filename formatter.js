@@ -33,10 +33,16 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     if(msg.devName.indexOf("RTG") !== -1){
         
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 2) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
+
+        } else if (msg.CurrentTotal >= 2 && msg.CurrentTotal < 100) {
+            msg.maneuver = "Boşta Bekleme";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('001000',2);
+
         } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 150) {
             msg.maneuver = "Vira Trolley Boş Yavaş";
             msg.load = "Yüksüz";
@@ -98,13 +104,19 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         
     if(msg.devName.indexOf("STS") !== -1){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 2) {
             msg.maneuver = "Enerjisiz";
 	        msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
+
+        } else if (msg.CurrentTotal >= 2 && msg.CurrentTotal < 100) {
+            msg.maneuver = "Boşta Bekleme";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('001000',2);
+
             
-        } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
-            msg.maneuver = "Beklemede";
+        } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 330) {
+            msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
         } else {
             msg.maneuver = "Contact system administrator.";
@@ -116,12 +128,12 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
         
     if(msg.devName.indexOf("MHC") !== -1 && msg.devName !== "A-MHC03"){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 5) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
     
-        } else if (msg.CurrentTotal < 145) {
+        } else if (msg.CurrentTotal >= 5 && msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
             msg.state = parseInt('001000',2);
@@ -174,12 +186,12 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     
     if(msg.devName == "A-MHC03"){
         
-        if (msg.CurrentTotal < 10) {
+        if (msg.CurrentTotal < 5) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
     
-        } else if (msg.CurrentTotal < 100) {
+        } else if (msg.CurrentTotal >= 5 && msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
             msg.state = parseInt('001000',2);
@@ -299,11 +311,11 @@ else if(msg["Active Enegy-CL"]){    //PM2100
         
     if(msg.devName.indexOf("STS") !== -1){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 10) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
-        } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
+        } else if (msg.CurrentTotal >= 10 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
         } else {
@@ -314,7 +326,12 @@ else if(msg["Active Enegy-CL"]){    //PM2100
     }
     
     if(msg.devName.indexOf("MHC") !== -1 && msg.devName !== "A-MHC03"){
-        if (msg.CurrentTotal < 145) {
+        if (msg.CurrentTotal < 10) {
+            msg.maneuver = "Enerjisiz";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('000000',2);
+
+        } else if (msg.CurrentTotal >= 10 && msg.CurrentTotal < 145) {
             msg.maneuver = "Boşta Bekleme";
             msg.load = "Yüksüz";
             msg.state = parseInt('001000',2);
@@ -365,10 +382,17 @@ else if(msg["Active Enegy-CL"]){    //PM2100
     }
     
     if(msg.devName == "A-MHC03"){
-        
-        if (msg.CurrentTotal < 100) {
+
+        if (msg.CurrentTotal < 10) {
+            msg.maneuver = "Enerjisiz";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('000000',2);
+
+        } else if (msg.CurrentTotal >= 10 && msg.CurrentTotal < 100) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
+            msg.state = parseInt('001000',2);
+
         } else {
             msg.maneuver = "Contact system administrator.";
             msg.load = "No Data";
@@ -421,10 +445,16 @@ else if(msg["Active Energy-Import"]){  //PM2100
     
     if(msg.devName.indexOf("RTG") !== -1){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 5) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
+        
+        } else if (msg.CurrentTotal >= 5 && msg.CurrentTotal < 100) {
+            msg.maneuver = "Boşta Bekleme";
+            msg.load = "Yüksüz";
+            msg.state = parseInt('001000',2);
+        
         } else if (msg.CurrentTotal >= 100 && msg.CurrentTotal < 150) {
             msg.maneuver = "Vira Trolley Boş Yavaş";
             msg.load = "Yüksüz";
@@ -487,11 +517,11 @@ else if(msg["Active Energy-Import"]){  //PM2100
         
     if(msg.devName.indexOf("STS") !== -1){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 5) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
-        } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
+        } else if (msg.CurrentTotal >= 5 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
         } else {
@@ -605,7 +635,7 @@ else if(msg["Active Energy"]){      //UMG508
     
     if(msg.devName.indexOf("RTG") !== -1){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 10) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
@@ -670,11 +700,11 @@ else if(msg["Active Energy"]){      //UMG508
         
     if(msg.devName.indexOf("STS") !== -1){
         
-        if (msg.CurrentTotal < 100) {
+        if (msg.CurrentTotal < 5) {
             msg.maneuver = "Enerjisiz";
             msg.load = "Yüksüz";
             msg.state = parseInt('000000',2);
-        } else if (msg.CurrentTotal >= 260 && msg.CurrentTotal < 330) {
+        } else if (msg.CurrentTotal >= 5 && msg.CurrentTotal < 330) {
             msg.maneuver = "Beklemede";
             msg.load = "Yüksüz";
         } else {
