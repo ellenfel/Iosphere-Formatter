@@ -1,1 +1,19 @@
 password: 0*6Yfd5j
+
+curl -X 'POST' \
+  'http://127.0.0.1:8080/api/plugins/telemetry/DEVICE/134d3821-25ff-11ee-9c0b-a53a7980c9e6/timeseries/ANY?scope=ANY' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAdGhpbmdzYm9hcmQub3JnIiwidXNlcklkIjoiZDc2MDlkMTAtMWMxOC0xMWVlLTkyMGYtZmYzYjJiYTAyNmE5Iiwic2NvcGVzIjpbIlRFTkFOVF9BRE1JTiJdLCJzZXNzaW9uSWQiOiIzYjgzZTkzZi01NGFiLTQzNDgtODZhZi1mYzE2OGJjYTg4NDAiLCJpc3MiOiJ0aGluZ3Nib2FyZC5pbyIsImlhdCI6MTcwMjg5Nzg1NSwiZXhwIjoxNzAyOTA2ODU1LCJlbmFibGVkIjp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiZDcyZmM5MTAtMWMxOC0xMWVlLTkyMGYtZmYzYjJiYTAyNmE5IiwiY3VzdG9tZXJJZCI6IjEzODE0MDAwLTFkZDItMTFiMi04MDgwLTgwODA4MDgwODA4MCJ9.k5vuTmP_sJgHd7rW7bblJS4J5ErVLV-luNi4rOiA9nkWtnX1fIx8I1_NW_y-QApKLWu-HRJEzKwsW4mbqEGiTA' \
+  -d '{"power": 26}'
+  
+  
+  curl -X 'GET' \
+  'http://127.0.0.1:8080/api/plugins/telemetry/DEVICE/134d3821-25ff-11ee-9c0b-a53a7980c9e6/values/timeseries?keys=power' \
+  -H 'accept: application/json' \
+  -H 'X-Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZW5hbnRAdGhpbmdzYm9hcmQub3JnIiwidXNlcklkIjoiZDc2MDlkMTAtMWMxOC0xMWVlLTkyMGYtZmYzYjJiYTAyNmE5Iiwic2NvcGVzIjpbIlRFTkFOVF9BRE1JTiJdLCJzZXNzaW9uSWQiOiIzYjgzZTkzZi01NGFiLTQzNDgtODZhZi1mYzE2OGJjYTg4NDAiLCJpc3MiOiJ0aGluZ3Nib2FyZC5pbyIsImlhdCI6MTcwMjg5Nzg1NSwiZXhwIjoxNzAyOTA2ODU1LCJlbmFibGVkIjp0cnVlLCJpc1B1YmxpYyI6ZmFsc2UsInRlbmFudElkIjoiZDcyZmM5MTAtMWMxOC0xMWVlLTkyMGYtZmYzYjJiYTAyNmE5IiwiY3VzdG9tZXJJZCI6IjEzODE0MDAwLTFkZDItMTFiMi04MDgwLTgwODA4MDgwODA4MCJ9.k5vuTmP_sJgHd7rW7bblJS4J5ErVLV-luNi4rOiA9nkWtnX1fIx8I1_NW_y-QApKLWu-HRJEzKwsW4mbqEGiTA'
+
+  
+  
+  
+  

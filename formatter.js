@@ -29,7 +29,8 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     
     msg["Active Energy"] = msg["Active Enegy-Im"];
     
-    
+
+    0000000000000000000000000000000
     if(msg.devName.indexOf("RTG") !== -1){
         
         
@@ -431,7 +432,7 @@ else if(msg["Active Energy-Import"]){  //PM2100
     msg["Current L1"] = msg["Current L1"];
     msg["Current L2"] = msg["Current L2"];
     msg["Current L3"] = msg["Current L3"];
-    msg.Frequency = msg.Frequency/100;
+    msg.Frequency;
     //msg["Reactive EnergyIn"] = msg["Reactive EnergyIn"]/1000;
     // msg["Reactive EnergyKa"] = msg["Reactive EnergyKa"]/1000;
     msg["Reactive Power"] = msg["Reactive Power"];
