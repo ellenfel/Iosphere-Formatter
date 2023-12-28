@@ -2,6 +2,8 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     msg["Active Enegy-Im"] = msg["Active Enegy-Im"];
     msg["Active Enegy-Ex"] = msg["Active Enegy-Ex"];
     msg["Active Power"] = msg["Active Power"]/1000;
+
+    
     
     //Calculation of Cospi
     var temp = msg["Cos Phi"];
@@ -13,6 +15,7 @@ if(msg["Active Enegy-Im"]){   //Is it MPR63?
     msg["Cos Phi"] = msg["Cos Phi"] / Math.pow(10, n);
     msg["Cos Phi"] = msg["Cos Phi"];
     
+
     msg["Current L1"] = msg["Current L1"]/1000;
     msg["Current L2"] = msg["Current L2"]/1000;
     msg["Current L3"] = msg["Current L3"]/1000;
